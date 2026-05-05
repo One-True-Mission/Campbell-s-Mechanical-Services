@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule Service | Campbell's Mechanical Services & Transportation</title>
+<meta name="description" content="Schedule mobile mechanic service in Central Texas. Tell us about your vehicle and we'll get you on the calendar.">
+
+<link rel="icon" type="image/png" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="book">
+
+<!-- ============= NAV ============= -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.png" alt="Campbell's Mechanical">
+      <span class="nav-brand-text">Campbell's<small>Mechanical & Transportation</small></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" data-link="home">Home</a></li>
+        <li><a href="services.html" data-link="services">Services</a></li>
+        <li><a href="gallery.html" data-link="gallery">Work</a></li>
+        <li><a href="about.html" data-link="about">About</a></li>
+        <li><a href="book.html" data-link="book">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="tel:8305560663" class="btn btn-primary nav-cta">Call Now</a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============= PAGE HERO ============= -->
+<section class="page-hero" style="--hero-image: url('assets/hero-contact.jpg');">
+  <div class="container">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Schedule service.</h1>
+    <p class="lede">Fill out the form or call us straight. Most jobs we can quote in five minutes on the phone. Mornings, evenings, weekends, no problem.</p>
+  </div>
+</section>
+
+<!-- ============= BOOK FORM ============= -->
+<section style="padding: 80px 0;">
+  <div class="container" style="max-width: 1100px;">
+    <div class="book-grid" style="box-shadow: var(--shadow-lift); border-radius: var(--radius-card); overflow: hidden;">
+
+      <div class="book-form-area">
+        <span class="eyebrow on-light">Contact Form</span>
+        <h2>Tell us what's going on.</h2>
+        <p style="margin-bottom: 32px;">The more detail, the faster we can quote it. Year, make, model, what it's doing or not doing, and your zip helps us a lot.</p>
+
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT_HERE" method="POST">
+          <input type="hidden" name="_subject" value="New service request - Campbell's Mechanical">
+          <input type="hidden" name="_next" value="thank-you.html">
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+              <label for="city">City / Zip</label>
+              <input type="text" id="city" name="city" placeholder="Geronimo, 78115">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field full">
+              <label for="vehicle">Vehicle or Equipment</label>
+              <input type="text" id="vehicle" name="vehicle" placeholder="2015 F-250 6.7 Powerstroke / Mahindra 4540 / 32' gooseneck">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field full">
+              <label for="service">What's it doing?</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>Oil change</option>
+                <option>Brakes</option>
+                <option>Diagnostics / check engine</option>
+                <option>Suspension / shocks</option>
+                <option>A/C work</option>
+                <option>Diesel / glow plugs / fuel system</option>
+                <option>Tractor or heavy equipment</option>
+                <option>Trailer or boat (bearings, hubs, brakes)</option>
+                <option>Not sure / something else</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field full">
+              <label for="message">Details</label>
+              <textarea id="message" name="message" placeholder="Tell us what's going on, when you noticed it, and any noises, lights, or codes."></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Request</button>
+            <span class="form-note">Or call <a href="tel:8305560663" style="color: var(--blue); font-weight: 700;">(830) 556-0663</a></span>
+          </div>
+        </form>
+      </div>
+
+      <aside class="book-sidebar">
+        <h3>Reach Us</h3>
+
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <span class="label">Ty Shelton</span>
+            <a href="tel:8305560663" class="value">(830) 556-0663</a>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <span class="label">Mike Campbell</span>
+            <a href="tel:9705181620" class="value">(970) 518-1620</a>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <span class="label">Based In</span>
+            <span class="value">Geronimo, TX</span>
+          </div>
+        </div>
+
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div>
+            <span class="label">Hours</span>
+            <span class="value small">Call or text 24/7. Service appointments scheduled around your week.</span>
+          </div>
+        </div>
+
+        <div class="book-area-list">
+          <div class="label">Service Area</div>
+          <div class="areas">Geronimo, San Marcos, New Braunfels, Seguin, Round Rock, Kyle, and surrounding Central Texas.</div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="Campbell's Mechanical">
+        <span class="nav-brand-text">Campbell's<small>Mechanical & Transportation</small></span>
+      </a>
+      <p class="footer-tagline">Mobile mechanic and transportation service for Central Texas. We come to you, on your schedule, on your driveway or job site.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-list">
+        <li><a href="tel:8305560663">(830) 556-0663 (Ty)</a></li>
+        <li><a href="tel:9705181620">(970) 518-1620 (Mike)</a></li>
+        <li><span>Geronimo, TX</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul class="footer-list">
+        <li><a href="services.html">Auto Repair</a></li>
+        <li><a href="services.html">Diagnostics</a></li>
+        <li><a href="services.html">Heavy Equipment</a></li>
+        <li><a href="services.html">Trailers & Boats</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <ul class="footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Work Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="legal">&copy; 2025 Campbell's Mechanical Services & Transportation LLC. All rights reserved.</span>
+    <span class="legal">Geronimo, San Marcos, New Braunfels, Seguin, Round Rock, Kyle</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
