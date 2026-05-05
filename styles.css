@@ -75,7 +75,7 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(0.38) saturate(0.85);
+  filter: brightness(0.75) saturate(0.95);
 }
 
 img { max-width: 100%; display: block; }
@@ -148,13 +148,13 @@ section {
   border-radius: var(--radius-card);
   padding: 70px 60px;
   box-shadow: var(--shadow-lift);
-  border: 1px solid var(--line-dark);
+  border: 1px solid var(--blue);
 }
 
 .section-card.light .container {
   background: var(--card-light);
   color: var(--ink);
-  border: 1px solid var(--line-light);
+  border: 1px solid var(--blue);
 }
 
 .section-card.light h1,
@@ -368,26 +368,19 @@ section {
   align-items: center;
   overflow: hidden;
   isolation: isolate;
+  background-color: var(--black);
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -2;
-  background-image: var(--hero-image, url('assets/hero-home.jpg'));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(0.5) saturate(0.95);
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
   z-index: -1;
-  background: linear-gradient(135deg, rgba(10,13,18,0.65) 0%, rgba(20,63,128,0.40) 100%);
+  background: linear-gradient(135deg, rgba(10,13,18,0.78) 0%, rgba(10,13,18,0.45) 60%, rgba(20,63,128,0.35) 100%);
   pointer-events: none;
 }
 
@@ -396,6 +389,8 @@ section {
   margin: 0 auto;
   padding: 0 28px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -466,27 +461,25 @@ section {
   border-bottom: 1px solid var(--line-dark);
   overflow: hidden;
   isolation: isolate;
+  background-color: var(--black);
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -2;
-  background-image: var(--hero-image, url('assets/hero-home.jpg'));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(0.45) saturate(0.95);
+  z-index: -1;
+  background: linear-gradient(135deg, rgba(10,13,18,0.82) 0%, rgba(10,13,18,0.55) 60%, rgba(20,63,128,0.4) 100%);
+  pointer-events: none;
 }
 
-.page-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(135deg, rgba(10,13,18,0.7) 0%, rgba(20,63,128,0.45) 100%);
-  pointer-events: none;
+.page-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .page-hero h1 {
@@ -500,31 +493,20 @@ section {
 }
 
 /* =========================================================
-   MARQUEE (contained card with blue accent borders)
+   MARQUEE (full-bleed band with blue accent borders)
    ========================================================= */
 .marquee-section {
-  padding: 30px 0;
+  padding: 0;
 }
 
 .marquee {
-  max-width: var(--container);
-  margin: 0 auto;
-  background: rgba(10,13,18,0.92);
+  background: rgba(10,13,18,0.95);
   border-top: 2px solid var(--blue);
   border-bottom: 2px solid var(--blue);
-  border-radius: var(--radius-card);
   overflow: hidden;
   padding: 18px 0;
   position: relative;
-  box-shadow: var(--shadow-lift);
-}
-
-@media (max-width: 1296px) {
-  .marquee { margin: 0 28px; }
-}
-
-@media (max-width: 560px) {
-  .marquee { margin: 0 18px; }
+  width: 100%;
 }
 
 .marquee-track {
@@ -698,7 +680,7 @@ section {
 
 .stats-band .container {
   background: rgba(10,13,18,0.88);
-  border: 1px solid var(--line-dark);
+  border: 1px solid var(--blue);
   border-radius: var(--radius-card);
   padding: 50px 60px;
   box-shadow: var(--shadow-lift);
@@ -888,7 +870,7 @@ section {
 
 .cta-strip .container {
   background: linear-gradient(135deg, rgba(10,13,18,0.92) 0%, rgba(20,63,128,0.88) 100%);
-  border: 1px solid rgba(30,95,191,0.4);
+  border: 1px solid var(--blue);
   border-radius: var(--radius-card);
   padding: 70px 60px;
   text-align: center;
